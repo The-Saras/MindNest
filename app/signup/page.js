@@ -7,10 +7,11 @@ export default function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ name, email, password });
+    console.log({ name, email, password, confirmPassword });
   };
 
   return (
